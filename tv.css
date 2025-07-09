@@ -1,0 +1,50 @@
+body {
+    background-color: #141414;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  nav ul li a.active {
+    color: #e50914;
+    font-weight: bold;
+  }
+  
+  /* Container for each row */
+  .row {
+    margin-bottom: 30px;
+  }
+  
+  /* Section title */
+  .row h2 {
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 20px;
+  }
+  
+  /* Scrollable posters container */
+  .row-posters {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px;
+    scroll-behavior: smooth;
+    gap: 10px;
+  }
+  
+  /* Each TV show poster */
+  .row-poster {
+    width: 160px;
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .row-poster:hover {
+    transform: scale(1.25) translateY(-10px);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  

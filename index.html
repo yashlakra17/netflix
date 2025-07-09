@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix India – Watch TV Shows Online</title>
+  <link rel="stylesheet" href="style.css" />
+   
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="./assests/WhatsApp_Image_2025-06-28_at_12.28.28-removebg-preview.png" alt="Netflix Logo" class="logo" />
+    <a href="signin.html" title="Pls Sign In Or Login In" class="sign-in-btn">Sign In</a>
+    <!-- <button id="signOutBtn" class="sign-out-btn">Sign Out</button> -->
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <h2>Watch anywhere. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="email-form">
+        <input type="email" placeholder="Email address" />
+        <button>Get Started &gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js">
+  // Check if user is signed in
+  const savedUser = JSON.parse(localStorage.getItem("netflixUser"));
+  const isSignedIn = localStorage.getItem("signedIn") === "true";
+
+  if (!savedUser) {
+    // No user info → redirect to signup
+    window.location.href = "signup.html";
+  } else if (!isSignedIn) {
+    // User exists but not signed in → redirect to signin
+    window.location.href = "signin.html";
+  }
+  </script>
+</body>
+</html>

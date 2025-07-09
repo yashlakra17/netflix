@@ -1,0 +1,112 @@
+/* Sign In Page Styles */
+.sign-in-body {
+    background:url('./assests/SL-122019-26260-04.jpg');
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sign-in-container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 60px 68px 40px;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    top: -55px;
+    left: 145px;
+    width: 300px;
+    height: 170px;
+  }
+  
+  .sign-in-form h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .sign-in-form input {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  #signin {
+    width: 100px;
+    padding: 12px;
+    background: #e50914;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin: 15px 0;
+  }
+  
+  .form-options a {
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+  
+  .signup-link {
+    margin-top: 30px;
+    font-size: 0.95rem;
+  }
+  
+  .signup-link a {
+    color: #e50914;
+    text-decoration: none;
+  }
+  
+  .sign-in-form small {
+    color: #8c8c8c;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  .google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #444;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 20px 0;
+  }
+  
+  .google-login img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .google-login:hover {
+    background: #eee;
+  }
+  
